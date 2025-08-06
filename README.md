@@ -18,9 +18,6 @@ Di sini aku mendokumentasikan seluruh proses pengujian API di Reqres.in, mulai d
 # Deskripsi Proyek:
 Proyek ini berfokus pada pengujian API di dummy API Reqres.in. Aku memulai dengan pengujian manual di Postman, dilanjutkan dengan automation menggunakan Node.js, dan pengujian performa menggunakan JMeter. Laporan hasil testing juga aku buat dalam bentuk HTML Extra Report dari Newman agar lebih visual & mudah dibaca.
 
-# Link Live Report:
-Hasil Report Newman HTML Extra (Postman Collection)
-
 # Referensi & Link Terkait:
 
 Postinganku di LinkedIn (tentang project ini): [LINK_POSTINGAN]
