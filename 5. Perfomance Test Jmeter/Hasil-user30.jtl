@@ -1,0 +1,151 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1754037405730,254,TC001 GET User Page 2,200,OK,Load-test 1-11,text,true,,2462,187,11,11,https://reqres.in/api/users?page=2,253,0,162
+1754037405108,938,TC001 GET User Page 2,200,OK,Load-test 1-9,text,true,,2465,187,11,11,https://reqres.in/api/users?page=2,938,0,625
+1754037402978,1710,TC001 GET User Page 2,200,OK,Load-test 1-3,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,1692,0,1575
+1754037406051,250,TC001 GET User Page 2,200,OK,Load-test 1-12,text,true,,2462,187,12,12,https://reqres.in/api/users?page=2,250,0,158
+1754037405331,276,TC001 GET User Page 2,200,OK,Load-test 1-10,text,true,,2462,187,10,10,https://reqres.in/api/users?page=2,276,0,166
+1754037403975,714,TC001 GET User Page 2,200,OK,Load-test 1-6,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,695,0,570
+1754037404401,374,TC001 GET User Page 2,200,OK,Load-test 1-7,text,true,,2466,187,7,7,https://reqres.in/api/users?page=2,374,0,228
+1754037402828,1860,TC001 GET User Page 2,200,OK,Load-test 1-1,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,1842,0,1717
+1754037402825,1864,TC001 GET User Page 2,200,OK,Load-test 1-2,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,1846,0,1727
+1754037403650,1039,TC001 GET User Page 2,200,OK,Load-test 1-5,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,1020,0,896
+1754037404783,338,TC001 GET User Page 2,200,OK,Load-test 1-8,text,true,,2462,187,9,9,https://reqres.in/api/users?page=2,338,0,227
+1754037403351,1372,TC001 GET User Page 2,200,OK,Load-test 1-4,text,true,,2462,187,7,7,https://reqres.in/api/users?page=2,1372,0,1192
+1754037407030,72,TC002 GET User ID 2,200,OK,Load-test 1-4,text,true,,1713,182,14,14,https://reqres.in/api/users/2,72,0,0
+1754037406872,191,TC002 GET User ID 2,200,OK,Load-test 1-11,text,true,,1712,182,14,14,https://reqres.in/api/users/2,191,0,0
+1754037406905,82,TC002 GET User ID 2,200,OK,Load-test 1-3,text,true,,1714,182,14,14,https://reqres.in/api/users/2,82,0,0
+1754037407020,68,TC002 GET User ID 2,200,OK,Load-test 1-8,text,true,,1713,182,14,14,https://reqres.in/api/users/2,68,0,0
+1754037406952,138,TC002 GET User ID 2,200,OK,Load-test 1-7,text,true,,1712,182,14,14,https://reqres.in/api/users/2,138,0,0
+1754037406996,76,TC002 GET User ID 2,200,OK,Load-test 1-5,text,true,,1713,182,14,14,https://reqres.in/api/users/2,76,0,0
+1754037406965,72,TC002 GET User ID 2,200,OK,Load-test 1-1,text,true,,1713,182,14,14,https://reqres.in/api/users/2,72,0,0
+1754037406974,74,TC002 GET User ID 2,200,OK,Load-test 1-2,text,true,,1713,182,14,14,https://reqres.in/api/users/2,74,0,0
+1754037406359,649,TC001 GET User Page 2,200,OK,Load-test 1-13,text,true,,2468,187,14,14,https://reqres.in/api/users?page=2,649,0,418
+1754037406940,71,TC002 GET User ID 2,200,OK,Load-test 1-6,text,true,,1713,182,14,14,https://reqres.in/api/users/2,71,0,0
+1754037406926,80,TC002 GET User ID 2,200,OK,Load-test 1-10,text,true,,1712,182,14,14,https://reqres.in/api/users/2,80,0,0
+1754037406650,340,TC001 GET User Page 2,200,OK,Load-test 1-14,text,true,,2462,187,14,14,https://reqres.in/api/users?page=2,340,0,190
+1754037406912,78,TC002 GET User ID 2,200,OK,Load-test 1-12,text,true,,1711,182,14,14,https://reqres.in/api/users/2,77,0,0
+1754037408000,233,TC001 GET User Page 2,200,OK,Load-test 1-18,text,true,,2462,187,18,18,https://reqres.in/api/users?page=2,233,0,135
+1754037407885,212,TC002 GET User ID 2,200,OK,Load-test 1-13,text,true,,1714,182,18,18,https://reqres.in/api/users/2,212,0,0
+1754037407506,677,TC004 Created New User,201,Created,Load-test 1-7,text,true,,1438,253,18,18,https://reqres.in/api/users,677,0,0
+1754037407764,271,TC004 Created New User,201,Created,Load-test 1-1,text,true,,1438,253,18,18,https://reqres.in/api/users,270,0,0
+1754037407684,454,TC004 Created New User,201,Created,Load-test 1-5,text,true,,1438,253,18,18,https://reqres.in/api/users,453,0,0
+1754037407397,500,TC004 Created New User,201,Created,Load-test 1-8,text,true,,1438,253,17,17,https://reqres.in/api/users,499,0,0
+1754037407461,306,TC001 GET User Page 2,200,OK,Load-test 1-16,text,true,,2462,187,17,17,https://reqres.in/api/users?page=2,306,0,196
+1754037407214,677,TC004 Created New User,201,Created,Load-test 1-11,text,true,,1438,253,17,17,https://reqres.in/api/users,677,0,0
+1754037407255,623,TC004 Created New User,201,Created,Load-test 1-3,text,true,,1438,253,17,17,https://reqres.in/api/users,622,0,0
+1754037407213,495,TC004 Created New User,201,Created,Load-test 1-4,text,true,,1434,253,16,16,https://reqres.in/api/users,495,0,0
+1754037406881,284,TC002 GET User ID 2,200,OK,Load-test 1-9,text,true,,1718,182,15,15,https://reqres.in/api/users/2,283,0,0
+1754037407123,246,TC001 GET User Page 2,200,OK,Load-test 1-15,text,true,,2462,187,15,15,https://reqres.in/api/users?page=2,246,0,156
+1754037408375,243,TC001 GET User Page 2,200,OK,Load-test 1-19,text,true,,2462,187,19,19,https://reqres.in/api/users?page=2,243,0,148
+1754037408352,265,TC004 Created New User,201,Created,Load-test 1-12,text,true,,1438,253,19,19,https://reqres.in/api/users,264,0,0
+1754037408820,72,TC002 GET User ID 2,200,OK,Load-test 1-16,text,true,,1712,182,20,20,https://reqres.in/api/users/2,72,0,0
+1754037408538,247,TC004 Created New User,201,Created,Load-test 1-13,text,true,,1440,253,20,20,https://reqres.in/api/users,247,0,0
+1754037408391,63,TC002 GET User ID 2,200,OK,Load-test 1-18,text,true,,1711,182,19,19,https://reqres.in/api/users/2,63,0,0
+1754037408165,436,TC004 Created New User,201,Created,Load-test 1-10,text,true,,1438,253,19,19,https://reqres.in/api/users,436,0,0
+1754037407757,639,TC001 GET User Page 2,200,OK,Load-test 1-17,text,true,,2468,187,19,19,https://reqres.in/api/users?page=2,639,0,406
+1754037407805,451,TC004 Created New User,201,Created,Load-test 1-2,text,true,,1437,253,18,18,https://reqres.in/api/users,451,0,0
+1754037408231,86,TC002 GET User ID 2,200,OK,Load-test 1-14,text,true,,1712,182,18,18,https://reqres.in/api/users/2,86,0,0
+1754037407918,444,TC004 Created New User,201,Created,Load-test 1-6,text,true,,1438,253,18,18,https://reqres.in/api/users,444,0,0
+1754037409255,264,TC004 Created New User,201,Created,Load-test 1-16,text,true,,1438,253,21,21,https://reqres.in/api/users,264,0,0
+1754037409264,243,TC008 Succes Register,200,OK,Load-test 1-13,text,true,,1380,270,21,21,https://reqres.in/api/register,242,0,0
+1754037409248,257,TC008 Succes Register,200,OK,Load-test 1-12,text,true,,1378,270,21,21,https://reqres.in/api/register,239,0,0
+1754037409071,888,TC001 GET User Page 2,200,OK,Load-test 1-21,text,true,,2468,187,23,23,https://reqres.in/api/users?page=2,888,0,597
+1754037408778,493,TC001 GET User Page 2,200,OK,Load-test 1-20,text,true,,2464,187,21,21,https://reqres.in/api/users?page=2,493,0,315
+1754037409241,72,TC002 GET User ID 2,200,OK,Load-test 1-19,text,true,,1711,182,21,21,https://reqres.in/api/users/2,72,0,0
+1754037408967,256,TC008 Succes Register,200,OK,Load-test 1-3,text,true,,1378,270,21,21,https://reqres.in/api/register,255,0,0
+1754037408973,246,TC008 Succes Register,200,OK,Load-test 1-4,text,true,,1378,270,21,21,https://reqres.in/api/register,245,0,0
+1754037408884,274,TC008 Succes Register,200,OK,Load-test 1-11,text,true,,1378,270,21,21,https://reqres.in/api/register,274,0,0
+1754037409062,79,TC002 GET User ID 2,200,OK,Load-test 1-15,text,true,,1712,182,21,21,https://reqres.in/api/users/2,79,0,0
+1754037408741,397,TC008 Succes Register,200,OK,Load-test 1-7,text,true,,1378,270,21,21,https://reqres.in/api/register,396,0,0
+1754037408762,248,TC008 Succes Register,200,OK,Load-test 1-5,text,true,,1378,270,20,20,https://reqres.in/api/register,248,0,0
+1754037408766,283,TC008 Succes Register,200,OK,Load-test 1-8,text,true,,1378,270,20,20,https://reqres.in/api/register,283,0,0
+1754037408761,249,TC008 Succes Register,200,OK,Load-test 1-1,text,true,,1378,270,20,20,https://reqres.in/api/register,249,0,0
+1754037410145,239,TC010 Succes Login,200,OK,Load-test 1-4,text,true,,1368,271,24,24,https://reqres.in/api/login,239,0,0
+1754037410104,263,TC010 Succes Login,200,OK,Load-test 1-3,text,true,,1368,271,24,24,https://reqres.in/api/login,263,0,0
+1754037410002,209,TC001 GET User Page 2,200,OK,Load-test 1-24,text,true,,2462,187,24,24,https://reqres.in/api/users?page=2,209,0,136
+1754037410010,262,TC004 Created New User,201,Created,Load-test 1-19,text,true,,1434,253,24,24,https://reqres.in/api/users,261,0,0
+1754037409973,285,TC002 GET User ID 2,200,OK,Load-test 1-21,text,true,,1725,182,24,24,https://reqres.in/api/users/2,285,0,0
+1754037409951,257,TC010 Succes Login,200,OK,Load-test 1-12,text,true,,1368,271,24,24,https://reqres.in/api/login,257,0,0
+1754037409951,244,TC010 Succes Login,200,OK,Load-test 1-13,text,true,,1370,271,24,24,https://reqres.in/api/login,243,0,0
+1754037409737,299,TC008 Succes Register,200,OK,Load-test 1-16,text,true,,1374,270,24,24,https://reqres.in/api/register,298,0,0
+1754037409975,161,TC002 GET User ID 2,200,OK,Load-test 1-20,text,true,,1718,182,24,24,https://reqres.in/api/users/2,161,0,0
+1754037409714,230,TC001 GET User Page 2,200,OK,Load-test 1-23,text,true,,2462,187,23,23,https://reqres.in/api/users?page=2,229,0,132
+1754037409602,420,TC004 Created New User,201,Created,Load-test 1-14,text,true,,1434,253,24,24,https://reqres.in/api/users,420,0,0
+1754037409600,269,TC008 Succes Register,200,OK,Load-test 1-2,text,true,,1374,270,23,23,https://reqres.in/api/register,269,0,0
+1754037409630,265,TC008 Succes Register,200,OK,Load-test 1-6,text,true,,1374,270,23,23,https://reqres.in/api/register,264,0,0
+1754037410647,560,TC004 Created New User,201,Created,Load-test 1-21,text,true,,1444,253,23,23,https://reqres.in/api/users,559,0,0
+1754037410976,247,TC008 Succes Register,200,OK,Load-test 1-14,text,true,,1382,270,23,23,https://reqres.in/api/register,247,0,0
+1754037409532,272,TC008 Succes Register,200,OK,Load-test 1-10,text,true,,1378,270,23,23,https://reqres.in/api/register,272,0,0
+1754037409535,275,TC001 GET User Page 2,200,OK,Load-test 1-22,text,true,,2462,187,23,23,https://reqres.in/api/users?page=2,275,0,161
+1754037410894,335,TC004 Created New User,201,Created,Load-test 1-20,text,true,,1444,253,23,23,https://reqres.in/api/users,335,0,0
+1754037409329,438,TC004 Created New User,201,Created,Load-test 1-18,text,true,,1438,253,23,23,https://reqres.in/api/users,438,0,0
+1754037411244,244,TC010 Succes Login,200,OK,Load-test 1-14,text,true,,1376,271,24,24,https://reqres.in/api/login,238,0,0
+1754037409549,213,TC002 GET User ID 2,200,OK,Load-test 1-17,text,true,,1714,182,23,23,https://reqres.in/api/users/2,213,0,0
+1754037409059,553,TC004 Created New User,201,Created,Load-test 1-9,text,true,,1439,253,22,22,https://reqres.in/api/users,553,0,0
+1754037411180,266,TC010 Succes Login,200,OK,Load-test 1-6,text,true,,1376,271,24,24,https://reqres.in/api/login,266,0,0
+1754037411332,82,TC002 GET User ID 2,200,OK,Load-test 1-22,text,true,,1714,182,24,24,https://reqres.in/api/users/2,82,0,0
+1754037410664,785,TC001 GET User Page 2,200,OK,Load-test 1-26,text,true,,2472,187,24,24,https://reqres.in/api/users?page=2,785,0,398
+1754037411001,271,TC010 Succes Login,200,OK,Load-test 1-2,text,true,,1376,271,23,23,https://reqres.in/api/login,271,0,0
+1754037410929,88,TC002 GET User ID 2,200,OK,Load-test 1-23,text,true,,1713,182,22,22,https://reqres.in/api/users/2,88,0,0
+1754037410838,264,TC010 Succes Login,200,OK,Load-test 1-16,text,true,,1376,271,22,22,https://reqres.in/api/login,264,0,0
+1754037410414,688,TC001 GET User Page 2,200,OK,Load-test 1-25,text,true,,2476,187,22,22,https://reqres.in/api/users?page=2,688,0,443
+1754037410637,237,TC008 Succes Register,200,OK,Load-test 1-19,text,true,,1382,270,22,22,https://reqres.in/api/register,236,0,0
+1754037410325,392,TC010 Succes Login,200,OK,Load-test 1-7,text,true,,1368,271,24,24,https://reqres.in/api/login,392,0,0
+1754037410487,259,TC010 Succes Login,200,OK,Load-test 1-1,text,true,,1368,271,24,24,https://reqres.in/api/login,259,0,0
+1754037410448,257,TC010 Succes Login,200,OK,Load-test 1-8,text,true,,1368,271,24,24,https://reqres.in/api/login,256,0,0
+1754037410627,78,TC002 GET User ID 2,200,OK,Load-test 1-24,text,true,,1712,182,24,24,https://reqres.in/api/users/2,77,0,0
+1754037410347,247,TC010 Succes Login,200,OK,Load-test 1-5,text,true,,1368,271,23,23,https://reqres.in/api/login,247,0,0
+1754037410250,260,TC004 Created New User,201,Created,Load-test 1-15,text,true,,1434,253,25,25,https://reqres.in/api/users,259,0,0
+1754037410232,252,TC010 Succes Login,200,OK,Load-test 1-11,text,true,,1368,271,25,25,https://reqres.in/api/login,251,0,0
+1754037411882,272,TC004 Created New User,201,Created,Load-test 1-23,text,true,,1438,253,20,20,https://reqres.in/api/users,272,0,0
+1754037411994,254,TC010 Succes Login,200,OK,Load-test 1-19,text,true,,1372,271,19,19,https://reqres.in/api/login,254,0,0
+1754037411597,448,TC004 Created New User,201,Created,Load-test 1-22,text,true,,1439,253,21,21,https://reqres.in/api/users,448,0,0
+1754037411897,227,TC002 GET User ID 2,200,OK,Load-test 1-25,text,true,,1723,182,20,20,https://reqres.in/api/users/2,227,0,0
+1754037411773,227,TC001 GET User Page 2,200,OK,Load-test 1-29,text,true,,2463,187,21,21,https://reqres.in/api/users?page=2,227,0,142
+1754037411518,433,TC008 Succes Register,200,OK,Load-test 1-9,text,true,,1380,270,21,21,https://reqres.in/api/register,432,0,0
+1754037411198,641,TC001 GET User Page 2,200,OK,Load-test 1-27,text,true,,2468,187,23,23,https://reqres.in/api/users?page=2,641,0,427
+1754037411660,178,TC002 GET User ID 2,200,OK,Load-test 1-26,text,true,,1718,182,23,23,https://reqres.in/api/users/2,178,0,0
+1754037411486,274,TC008 Succes Register,200,OK,Load-test 1-18,text,true,,1382,270,22,22,https://reqres.in/api/register,274,0,0
+1754037411517,244,TC004 Created New User,201,Created,Load-test 1-17,text,true,,1442,253,22,22,https://reqres.in/api/users,244,0,0
+1754037411224,402,TC008 Succes Register,200,OK,Load-test 1-21,text,true,,1384,270,22,22,https://reqres.in/api/register,402,0,0
+1754037411347,318,TC008 Succes Register,200,OK,Load-test 1-20,text,true,,1384,270,22,22,https://reqres.in/api/register,318,0,0
+1754037411369,250,TC001 GET User Page 2,200,OK,Load-test 1-28,text,true,,2462,187,22,22,https://reqres.in/api/users?page=2,250,0,165
+1754037411251,257,TC010 Succes Login,200,OK,Load-test 1-10,text,true,,1376,271,24,24,https://reqres.in/api/login,256,0,0
+1754037412734,98,TC002 GET User ID 2,200,OK,Load-test 1-29,text,true,,1712,182,16,16,https://reqres.in/api/users/2,98,0,0
+1754037412646,269,TC008 Succes Register,200,OK,Load-test 1-22,text,true,,1379,270,16,16,https://reqres.in/api/register,269,0,0
+1754037412684,310,TC004 Created New User,201,Created,Load-test 1-25,text,true,,1440,253,16,16,https://reqres.in/api/users,310,0,0
+1754037412466,277,TC008 Succes Register,200,OK,Load-test 1-15,text,true,,1378,270,16,16,https://reqres.in/api/register,277,0,0
+1754037412354,419,TC004 Created New User,201,Created,Load-test 1-24,text,true,,1439,253,16,16,https://reqres.in/api/users,419,0,0
+1754037412526,294,TC008 Succes Register,200,OK,Load-test 1-23,text,true,,1378,270,16,16,https://reqres.in/api/register,294,0,0
+1754037412835,412,TC010 Succes Login,200,OK,Load-test 1-9,text,true,,1374,271,15,15,https://reqres.in/api/login,411,0,0
+1754037412041,494,TC001 GET User Page 2,200,OK,Load-test 1-30,text,true,,2464,187,17,17,https://reqres.in/api/users?page=2,494,0,324
+1754037412908,247,TC010 Succes Login,200,OK,Load-test 1-18,text,true,,1372,271,15,15,https://reqres.in/api/login,247,0,0
+1754037412965,234,TC008 Succes Register,200,OK,Load-test 1-17,text,true,,1380,270,15,15,https://reqres.in/api/register,234,0,0
+1754037412981,410,TC010 Succes Login,200,OK,Load-test 1-21,text,true,,1374,271,13,13,https://reqres.in/api/login,410,0,0
+1754037412869,205,TC002 GET User ID 2,200,OK,Load-test 1-27,text,true,,1714,182,16,16,https://reqres.in/api/users/2,205,0,0
+1754037413068,86,TC002 GET User ID 2,200,OK,Load-test 1-28,text,true,,1713,182,15,15,https://reqres.in/api/users/2,86,0,0
+1754037413008,330,TC010 Succes Login,200,OK,Load-test 1-20,text,true,,1374,271,14,14,https://reqres.in/api/login,329,0,0
+1754037413280,260,TC010 Succes Login,200,OK,Load-test 1-23,text,true,,1371,271,11,11,https://reqres.in/api/login,259,0,0
+1754037412899,438,TC004 Created New User,201,Created,Load-test 1-26,text,true,,1440,253,14,14,https://reqres.in/api/users,427,0,0
+1754037413255,244,TC010 Succes Login,200,OK,Load-test 1-15,text,true,,1372,271,11,11,https://reqres.in/api/login,243,0,0
+1754037413330,169,TC002 GET User ID 2,200,OK,Load-test 1-30,text,true,,1718,182,11,11,https://reqres.in/api/users/2,169,0,0
+1754037413171,269,TC008 Succes Register,200,OK,Load-test 1-25,text,true,,1380,270,12,12,https://reqres.in/api/register,268,0,0
+1754037413268,261,TC008 Succes Register,200,OK,Load-test 1-24,text,true,,1379,270,11,11,https://reqres.in/api/register,261,0,0
+1754037413160,262,TC010 Succes Login,200,OK,Load-test 1-22,text,true,,1373,271,13,13,https://reqres.in/api/login,262,0,0
+1754037413377,231,TC010 Succes Login,200,OK,Load-test 1-17,text,true,,1374,271,10,10,https://reqres.in/api/login,231,0,0
+1754037413145,432,TC004 Created New User,201,Created,Load-test 1-29,text,true,,1439,253,10,10,https://reqres.in/api/users,431,0,0
+1754037413450,434,TC004 Created New User,201,Created,Load-test 1-28,text,true,,1439,253,7,7,https://reqres.in/api/users,434,0,0
+1754037413441,295,TC004 Created New User,201,Created,Load-test 1-27,text,true,,1440,253,9,9,https://reqres.in/api/users,295,0,0
+1754037413625,259,TC010 Succes Login,200,OK,Load-test 1-25,text,true,,1374,271,7,7,https://reqres.in/api/login,258,0,0
+1754037413633,292,TC010 Succes Login,200,OK,Load-test 1-24,text,true,,1373,271,7,7,https://reqres.in/api/login,292,0,0
+1754037413602,425,TC008 Succes Register,200,OK,Load-test 1-26,text,true,,1380,270,6,6,https://reqres.in/api/register,424,0,0
+1754037413608,301,TC004 Created New User,201,Created,Load-test 1-30,text,true,,1440,253,7,7,https://reqres.in/api/users,301,0,0
+1754037413879,268,TC008 Succes Register,200,OK,Load-test 1-29,text,true,,1379,270,5,5,https://reqres.in/api/register,268,0,0
+1754037413944,225,TC008 Succes Register,200,OK,Load-test 1-27,text,true,,1380,270,5,5,https://reqres.in/api/register,225,0,0
+1754037413922,262,TC008 Succes Register,200,OK,Load-test 1-28,text,true,,1379,270,5,5,https://reqres.in/api/register,262,0,0
+1754037414051,319,TC008 Succes Register,200,OK,Load-test 1-30,text,true,,1380,270,5,5,https://reqres.in/api/register,318,0,0
+1754037414158,244,TC010 Succes Login,200,OK,Load-test 1-29,text,true,,1373,271,5,5,https://reqres.in/api/login,244,0,0
+1754037414179,236,TC010 Succes Login,200,OK,Load-test 1-27,text,true,,1374,271,4,4,https://reqres.in/api/login,235,0,0
+1754037414198,241,TC010 Succes Login,200,OK,Load-test 1-28,text,true,,1373,271,3,3,https://reqres.in/api/login,240,0,0
+1754037414041,440,TC010 Succes Login,200,OK,Load-test 1-26,text,true,,1374,271,2,2,https://reqres.in/api/login,439,0,0
+1754037414380,292,TC010 Succes Login,200,OK,Load-test 1-30,text,true,,1374,271,1,1,https://reqres.in/api/login,292,0,0
