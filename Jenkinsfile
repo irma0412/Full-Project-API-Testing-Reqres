@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout Repository') {
-            steps {
-                git 'https://github.com/irma0412/Full-Project-API-Testing-Reqres'
-            }
-        }
-
         stage('Process Test Plan') {
             steps {
                 echo 'Processing 1. Test Plan...'
