@@ -4,29 +4,44 @@ pipeline {
     stages {
         stage('Checkout Repository') {
             steps {
-                // Checkout branch main secara eksplisit
-                git branch: 'main', url: 'https://github.com/irma0412/Full-Project-API-Testing-Reqres'
+                git 'https://github.com/irma0412/Full-Project-API-Testing-Reqres'
             }
         }
 
-        stage('Process Testplan') {
+        stage('Process Test Plan') {
             steps {
-                echo 'Processing 1. Testplan...'
-                // Tambahkan perintah jika perlu memproses file testplan
+                echo 'Processing 1. Test Plan...'
             }
         }
 
-        stage('Process Testcase') {
+        stage('Process Test Case') {
             steps {
-                echo 'Processing 2. Testcase...'
-                // Tambahkan perintah jika perlu memproses testcase
+                echo 'Processing 2. Test Case...'
             }
         }
 
         stage('Run Postman API Tests') {
             steps {
-                // Jalankan Postman collection dengan newman + HTML report
-                sh 'newman run "3. Manual Test Postman/API_postman_collection.json" -e "3. Manual Test Postman/env_postman.json" -r cli,htmlextra --reporter-htmlextra-export "3. Manual Test Postman/newman/report.html"'
+                bat 'npm install -g newman newman-reporter-htmlextra'
+                bat 'newman run "3. Manual Test Postman/API_postman_collection.json" -e "3. Manual Test Postman/env_postman.json" -r cli,htmlextra --reporter-htmlextra-export "3. Manual Test Postman/newman/report.html"'
+            }
+        }
+
+        stage('Run Node.js Automated Tests') {
+            steps {
+                bat 'cd "4. Auto Test Node.js" && npm install && npm test'
+            }
+        }
+
+        stage('Run JMeter Performance Test') {
+            steps {
+                echo 'Run your JMeter test here if needed'
+            }
+        }
+
+        stage('Generate Final Report') {
+            steps {
+                echo 'Generate or process 6. Final Report...'
             }
         }
     }
