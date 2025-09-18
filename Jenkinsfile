@@ -1,48 +1,39 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Process Test Plan') {
-            steps {
-                echo 'Processing 1. Test Plan...'
-            }
-        }
+    environment {
+        PATH = "${env.PATH};C:\\Users\\IRMA SURYANI\\AppData\\Roaming\\npm"
+    }
 
-        stage('Process Test Case') {
+    stages {
+        stage('Install Dependencies') {
             steps {
-                echo 'Processing 2. Test Case...'
+                bat 'npm install -g newman newman-reporter-htmlextra'
             }
         }
 
         stage('Run Postman API Tests') {
             steps {
-                bat 'npm install -g newman newman-reporter-htmlextra'
                 bat 'newman run "3. Manual Test Postman/API_postman_collection.json" -e "3. Manual Test Postman/env_postman.json" -r cli,htmlextra --reporter-htmlextra-export "3. Manual Test Postman/newman/report.html"'
             }
         }
 
         stage('Run Node.js Automated Tests') {
             steps {
-                bat 'cd "4. Auto Test Node.js" && npm install && npm test'
+                echo 'Here you can add your Node.js automated test commands'
             }
         }
 
         stage('Run JMeter Performance Test') {
             steps {
-                echo 'Run your JMeter test here if needed'
+                echo 'Here you can add your JMeter performance test commands'
             }
         }
 
         stage('Generate Final Report') {
             steps {
-                echo 'Generate or process 6. Final Report...'
+                echo 'Here you can generate your final report'
             }
-        }
-    }
-
-    post {
-        always {
-            echo 'Pipeline finished!'
         }
     }
 }
