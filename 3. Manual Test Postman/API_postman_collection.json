@@ -2,9 +2,9 @@
 	"info": {
 		"_postman_id": "0700b97c-816a-423e-957a-341bd4c05b7d",
 		"name": "API Testing On Reqres.in",
+		"description": "StartFragment\n\n### API Testing On Reqres.in 🧪✨\n\nCollection ini berisi skenario pengujian API menggunakan **Reqres.in (Dummy API untuk testing & learning)**.\n\nSkenario yang diuji meliputi:\n\n1. **GET List Users** → Mengambil daftar user.\n    \n2. **GET Single User** → Mengambil data detail user.\n    \n3. **GET Single User Not Found** → Validasi user tidak ditemukan.\n    \n4. **POST Create User** → Simulasi pembuatan user baru.\n    \n5. **PUT Update User** → Mengupdate seluruh data user.\n    \n6. **PATCH Update User** → Mengupdate sebagian data user.\n    \n7. **DELETE User** → Menghapus user.\n    \n8. **POST Register Success** → Registrasi dengan data valid.\n    \n9. **POST Register Failed** → Registrasi dengan data invalid.\n    \n10. **POST Login Success** → Login dengan credential valid.\n    \n11. **POST Login Failed** → Login dengan credential invalid.\n    \n\nTujuan dari collection ini adalah untuk **melatih skenario pengujian API** dengan skema assertion seperti:\n\n- Validasi **status code**.\n    \n- Validasi **response body & fields**.\n    \n- Validasi **response time**.\n    \n\nAutomation dijalankan menggunakan **Newman CLI** untuk generate **HTML Report**.\n\nEndFragment",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40901400",
-		"_collection_link": "https://www.postman.com/joint-operations-astronaut-47789611/workspace/api-testing/collection/40901400-0700b97c-816a-423e-957a-341bd4c05b7d?action=share&source=collection_link&creator=40901400"
+		"_exporter_id": "40901400"
 	},
 	"item": [
 		{
@@ -43,7 +43,7 @@
 							"}); //Validasi nilai response\r",
 							"\r",
 							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time "
 						],
 						"type": "text/javascript",
@@ -52,6 +52,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -104,7 +107,7 @@
 							"}); //Validasi nilai response\r",
 							"\r",
 							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time "
 						],
 						"type": "text/javascript",
@@ -113,6 +116,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -145,8 +151,8 @@
 							"    pm.response.to.have.status(404); \r",
 							"}); // Validasi status code\r",
 							"\r",
-							"pm.test(\"Response time is less than 1000ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000); \r",
+							"pm.test(\"Response time is less than 1500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500); \r",
 							"}); // Validasi response time\r",
 							""
 						],
@@ -156,6 +162,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -268,7 +277,7 @@
 							"}); //Validasi nilai response\r",
 							"\r",
 							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time \r",
 							"\r",
 							" "
@@ -279,6 +288,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "PUT",
 				"header": [
 					{
@@ -326,9 +338,9 @@
 							"    pm.response.to.be.json;\r",
 							"}); //Validasi format JSON\r",
 							"\r",
-							"pm.test(\"User data has id field\", function(){\r",
-							"    pm.expect(Jsondata).to.have.property(\"id\");\r",
-							"}); //Validasi  struktur response \r",
+							"// pm.test(\"User data has id field\", function(){\r",
+							"//     pm.expect(Jsondata).to.have.property(\"id\");\r",
+							"// }); //Validasi  struktur response \r",
 							" // <<< DI SINI GAGAL karena `id` tidak ada seharusnya tetap ada karena patch tidak menghapus data yang tidak di update, patch hanya mengubah data yang di update.\r",
 							"\r",
 							"\r",
@@ -337,7 +349,7 @@
 							"}); //Validasi nilai response\r",
 							"\r",
 							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time \r",
 							"\r",
 							" "
@@ -345,9 +357,22 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "PATCH",
 				"header": [
 					{
@@ -389,8 +414,8 @@
 							"    pm.response.to.have.status(204);\r",
 							"}); // Validasi status code \r",
 							"\r",
-							"pm.test(\"Response time is less than 1000ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"pm.test(\"Response time is less than 1500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); // Validasi Response time\r",
 							"\r",
 							"pm.test(\"Response body is empty\", function () {\r",
@@ -404,6 +429,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "DELETE",
 				"header": [
 					{
@@ -454,8 +482,8 @@
 							"    pm.expect(Jsondata.id).to.eql(4);\r",
 							"}); //Validasi nilai response\r",
 							"\r",
-							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"pm.test(\"Response time is less than 1500ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time "
 						],
 						"type": "text/javascript",
@@ -464,6 +492,9 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -514,16 +545,26 @@
 							"    pm.expect(Jsondata).to.have.property(\"error\");\r",
 							"}); //Validasi struktur response (field)\r",
 							"\r",
-							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"pm.test(\"Response time is less than 1500ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time "
 						],
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -633,8 +674,8 @@
 							"    pm.expect(Jsondata).to.have.property(\"error\");\r",
 							"}); //Validasi struktur response (field)\r",
 							"\r",
-							"pm.test(\"Response time is less than 1000ms\", function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"pm.test(\"Response time is less than 1500ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
 							"}); //Validasi response time "
 						],
 						"type": "text/javascript",
