@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        stage('Install Dependencies') {
-            steps {
-                bat 'npm install -g newman newman-reporter-htmlextra'
-            }
-        }
+        // stage('Install Dependencies') {
+        //     steps {
+        //         bat 'npm install -g newman newman-reporter-htmlextra'
+        //     }
+        // }
 
         stage('Run Postman API Tests') {
             steps {
