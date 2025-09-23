@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on: 
     push:
-        branches: [ci-cd-test]
+        branches: [Action]
 
 jobs: 
     run-tests:
@@ -25,4 +25,4 @@ jobs:
             
             # Run Postman Collection
             - name: Run Postman Collection
-              run: newman run ../../3.Manual\Test\Postman/API_postman_collection.json -e ../../3.Manual\Test\Postman/env_postman.json
+              run: newman run "../../3.Manual Test Postman/API_postman_collection.json" -e "../../3.Manual Test Postman/env_postman.json"
