@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/APIAutomation_reqres.js --reporter mochawesome"
+    "test": "mocha Test/APIAutomation_reqres.js --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
