@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps: 
-            # Chechkout Repository
+            # Checkout Repository
             - name: Checkout repository
               uses: actions/checkout@v3
 
@@ -23,7 +23,17 @@ jobs:
             # Install Newman
             - name: Install Newman
               run: npm install -g newman
-            
+
+            # Debug folder untuk cek file
+            - name: Debug folder Postman
+              run: |
+                echo "Isi semua folder:"
+                ls -R
+                echo "Isi folder 3.Manual_Test_Postman:"
+                ls -lah "${GITHUB_WORKSPACE}/3.Manual_Test_Postman" || echo "Folder nggak ada!"
+
             # Run Postman Collection
             - name: Run Postman Collection
-              run:  newman run "../../3.Manual_Test_Postman/API_postman_collection.json" -e "../../3.Manual_Test_Postman/env_postman.json"
+              run: |
+                newman run "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/API_postman_collection.json" \
+                -e "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/env_postman.json"
