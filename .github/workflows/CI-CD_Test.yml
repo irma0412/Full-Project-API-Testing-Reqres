@@ -26,4 +26,4 @@ jobs:
             
             # Run Postman Collection
             - name: Run Postman Collection
-              run:  newman run "../../3.Manual Test Postman/API_postman_collection.json" -e "../../3.Manual Test Postman/env_postman.json"
+              run:  newman run ../../3.Manual_Test_Postman/API_postman_collection.json -e ../../3.Manual_Test_Postman/env_postman.json
