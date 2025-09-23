@@ -1,8 +1,9 @@
-name: CI/CD Pipeline
+name: CI-CD_Test
 
 on: 
     push:
         branches: [Action]
+    workflow_dispatch:   # <- bisa run manual kapan aja
 
 jobs: 
     run-tests:
