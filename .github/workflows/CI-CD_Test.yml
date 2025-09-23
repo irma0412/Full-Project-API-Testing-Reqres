@@ -23,6 +23,7 @@ jobs:
             # Install dependencies (buat automation test)
             - name: Install dependencies
               run: npm ci
+              working-directory: ./4.Auto_Test_Node.js   # <<< tambahin working-directory
 
             # Install Newman
             - name: Install Newman
@@ -44,5 +45,5 @@ jobs:
             # Run Automation test 
             - name : Run Automation Test
               run : npm test
-              working-directory: "${GITHUB_WORKSPACE}/4.Auto_Test_Node.js"
+              working-directory: "./4.Auto_Test_Node.js"
 
