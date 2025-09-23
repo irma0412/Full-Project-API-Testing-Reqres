@@ -1,49 +1,58 @@
 name: CI-CD_Test
 
 on: 
-    push:
-        branches: [Action]
-    workflow_dispatch:   # <- bisa run manual kapan aja
+  push:
+    branches: [Action]
+  workflow_dispatch:   # <- bisa run manual kapan aja
 
 jobs: 
-    run-tests:
-        runs-on: ubuntu-latest
+  run-tests:
+    runs-on: ubuntu-latest
 
-        steps: 
-            # Checkout Repository
-            - name: Checkout repository
-              uses: actions/checkout@v3
+    steps: 
+      # Checkout Repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-            # Setup Node.js (untuk newman)
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                node-version: '18'
+      # Setup Node.js (untuk newman & automation test)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-            # Install dependencies (buat automation test)
-            - name: Install dependencies
-              run: npm ci
-              working-directory: ./4.Auto_Test_Node.js   # <<< tambahin working-directory
+      # Install dependencies (buat automation test)
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./4.Auto_Test_Node.js
 
-            # Install Newman
-            - name: Install Newman
-              run: npm install -g newman
+      # Install Newman
+      - name: Install Newman
+        run: npm install -g newman
 
-            # Debug folder untuk cek file
-            - name: Debug folder Postman
-              run: |
-                echo "Isi semua folder:"
-                ls -R
-                echo "Isi folder 3.Manual_Test_Postman:"
-                ls -lah "${GITHUB_WORKSPACE}/3.Manual_Test_Postman" || echo "Folder nggak ada!"
+      # 5️⃣ Debug Folder (cek isi repo)
+      - name: Debug Folder
+        run: |
+          echo "===== DEBUG: Isi Semua Folder ====="
+          ls -R "${{ github.workspace }}"
+          echo "===== DEBUG: Isi Folder Automation Test ====="
+          ls -lah "${{ github.workspace }}/4.Auto_Test_Node.js" || echo "Folder nggak ada!"
+          echo "===== DEBUG: Isi Folder JMeter ====="
+          ls -lah "${{ github.workspace }}/5.Perfomance_Test_Jmeter" || echo "Folder nggak ada!"
 
-            # Run Postman Collection
-            - name: Run Postman Collection
-              run: |
-                newman run "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/API_postman_collection.json" \
-                -e "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/env_postman.json"
-            # Run Automation test 
-            - name : Run Automation Test
-              run : npm test
-              working-directory: "./4.Auto_Test_Node.js"
+      # Run Postman Collection
+      - name: Run Postman Collection
+        run: |
+          newman run "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/API_postman_collection.json" \
+          -e "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/env_postman.json"
 
+      # Run Automation test 
+      - name: Run Automation Test
+        run: npm test
+        working-directory: ./4.Auto_Test_Node.js
+
+      # Run JMeter Test
+      - name: Run JMeter Test
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
+        with:
+          testFilePath: ./5.Perfomance_Test_Jmeter/load.jmx
+          outputReportsFolder: ./5.Perfomance_Test_Jmeter/report
