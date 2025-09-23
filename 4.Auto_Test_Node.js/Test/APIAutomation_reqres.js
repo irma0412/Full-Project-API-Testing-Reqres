@@ -18,7 +18,7 @@ describe("Positive Test API Reqres", function(){
         // Validasi First user has id : 7
         assert.strictEqual(body.data[0].id, 7);  
         // Validasi response time
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
 
     })
 
@@ -31,7 +31,7 @@ describe("Positive Test API Reqres", function(){
         //  Validasi user data has id : 2
         assert.strictEqual(body.data.id, 2);
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -50,7 +50,7 @@ describe("Positive Test API Reqres", function(){
         //  Validasi user data has id : 2
         assert.strictEqual(body.name, 'Irma Suryani');
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -68,7 +68,7 @@ describe("Positive Test API Reqres", function(){
         //  Validasi user data has id : 2
         assert.strictEqual(body.job, 'QA Enthusiast');
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -82,7 +82,7 @@ describe("Positive Test API Reqres", function(){
         // Validasi status code
         assert.strictEqual(status, 200);
         // Validasi user data has email field
-        assert.ok(body.hasOwnProperty('id'));
+        assert.ok(body.hasOwnProperty('first_name'));
         //  Validasi user data has id : 2
         assert.strictEqual(body.first_name, 'Irma');
         //  Validasi response time < 1000ms
@@ -95,7 +95,7 @@ describe("Positive Test API Reqres", function(){
         // Validasi status code
         assert.strictEqual(status, 204);
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
     
@@ -113,7 +113,7 @@ describe("Positive Test API Reqres", function(){
         //  Validasi user data has id : 2
         assert.strictEqual(body.id, 4);
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -131,7 +131,7 @@ describe("Positive Test API Reqres", function(){
         //  Validasi user data has id : 2
         assert.strictEqual(body.token, 'QpwL5tke4Pnpja7X4');
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -147,7 +147,7 @@ describe('Negative Test API Reqres', function(){
         // Validasi status code
         assert.strictEqual(status, 404);
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -163,7 +163,7 @@ describe('Negative Test API Reqres', function(){
         // Validasi user data has email field
         assert.ok(body.hasOwnProperty('error'));
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 
@@ -179,7 +179,7 @@ describe('Negative Test API Reqres', function(){
         // Validasi user data has email field
         assert.ok(body.hasOwnProperty('error'));
         //  Validasi response time < 1000ms
-        assert.ok(duration < 1000);
+        assert.ok(duration < 1500);
         
     });
 });

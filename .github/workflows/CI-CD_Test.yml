@@ -20,6 +20,10 @@ jobs:
               with:
                 node-version: '18'
 
+            # Install dependencies (buat automation test)
+            - name: Install dependencies
+              run: npm ci
+
             # Install Newman
             - name: Install Newman
               run: npm install -g newman
@@ -37,3 +41,8 @@ jobs:
               run: |
                 newman run "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/API_postman_collection.json" \
                 -e "${GITHUB_WORKSPACE}/3.Manual_Test_Postman/env_postman.json"
+            # Run Automation test 
+            - name : Run Automation Test
+              run : npm test
+              working-directory: "${GITHUB_WORKSPACE}/4.Auto_Test_Node.js"
+
