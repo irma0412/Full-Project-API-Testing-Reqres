@@ -5,6 +5,7 @@ on:
     branches: [Action]
   workflow_dispatch:   # <- bisa run manual kapan aja
 
+#Tahap CI
 jobs: 
   run-tests:
     runs-on: ubuntu-latest
@@ -20,8 +21,8 @@ jobs:
         with:
           node-version: '18'
 
-      # Install dependencies (buat automation test)
-      - name: Install dependencies
+      # Install Dependencies (untuk automation test)
+      - name: Install Dependencies
         run: npm ci
         working-directory: ./4.Auto_Test_Node.js
 
@@ -56,3 +57,50 @@ jobs:
         with:
           testFilePath: ./5.Perfomance_Test_Jmeter/load.jmx
           outputReportsFolder: ./5.Perfomance_Test_Jmeter/report
+
+# #Tahap CD
+# # Script ini hanya di pakai jika terdapat web/apl yang dibuild/dideploy
+#   Deploy:
+#     needs: run-tests #hanya jalan dengan catatan jobs run-tests sukses
+#     runs-on: ubuntu-latest
+#     steps:
+#       #Checkout Repository
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
+
+#       #Setup Node.js
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '18'
+      
+#       #Instal Dependencies
+#       - name: Install Dependencies
+#         run: npm ci
+#         working-directory: ./4.Auto_Test_Node.js
+
+#       #Install Newman
+#       - name: Install Newman
+#         run: npm install -g newman
+      
+#       # 5️⃣ Debug Folder (cek isi repo)
+#       - name: Debug Folder
+#         run: |
+#           echo "===== DEBUG: Isi Semua Folder ====="
+#           ls -R "${{ github.workspace }}"
+#           echo "===== DEBUG: Isi Folder Automation Test ====="
+#           ls -lah "${{ github.workspace }}/4.Auto_Test_Node.js" || echo "Folder nggak ada!"
+#           echo "===== DEBUG: Isi Folder JMeter ====="
+#           ls -lah "${{ github.workspace }}/5.Perfomance_Test_Jmeter" || echo "Folder nggak ada!"
+      
+#       #Build Project
+#       - name: Build Project
+#         run: npm run build #pastikan ada script 'build' dalam file package.json
+
+#       #Deploy ke Github Pages
+#       - name: Deploy ke Github Pages
+#         uses: Peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./build #ganti ./dist jika menggunakan vite/vue
+
