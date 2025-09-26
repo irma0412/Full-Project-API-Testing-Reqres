@@ -33,12 +33,11 @@ jobs:
       # 5️⃣ Debug Folder (cek isi repo)
       - name: Debug Folder
         run: |
-          echo "===== DEBUG: Isi Semua Folder ====="
-          ls -R "${{ github.workspace }}"
-          echo "===== DEBUG: Isi Folder Automation Test ====="
+          echo "===== Isi Folder Automation Test ====="
           ls -lah "${{ github.workspace }}/4.Auto_Test_Node.js" || echo "Folder nggak ada!"
-          echo "===== DEBUG: Isi Folder JMeter ====="
+          echo "===== Isi Folder JMeter ====="
           ls -lah "${{ github.workspace }}/5.Perfomance_Test_Jmeter" || echo "Folder nggak ada!"
+
 
       # Run Postman Collection
       - name: Run Postman Collection
@@ -85,13 +84,12 @@ jobs:
       
 #       # 5️⃣ Debug Folder (cek isi repo)
 #       - name: Debug Folder
-#         run: |
-#           echo "===== DEBUG: Isi Semua Folder ====="
-#           ls -R "${{ github.workspace }}"
-#           echo "===== DEBUG: Isi Folder Automation Test ====="
-#           ls -lah "${{ github.workspace }}/4.Auto_Test_Node.js" || echo "Folder nggak ada!"
-#           echo "===== DEBUG: Isi Folder JMeter ====="
-#           ls -lah "${{ github.workspace }}/5.Perfomance_Test_Jmeter" || echo "Folder nggak ada!"
+          # run: |
+          #   echo "===== Isi Folder Automation Test ====="
+          #   ls -lah "${{ github.workspace }}/4.Auto_Test_Node.js" || echo "Folder nggak ada!"
+          #   echo "===== Isi Folder JMeter ====="
+          #   ls -lah "${{ github.workspace }}/5.Perfomance_Test_Jmeter" || echo "Folder nggak ada!"
+
       
 #       #Build Project
 #       - name: Build Project
