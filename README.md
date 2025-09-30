@@ -20,7 +20,8 @@ Proyek ini berfokus pada pengujian API di dummy API Reqres.in. Aku memulai denga
 
 # Referensi & Link Terkait:
 
-Postinganku di LinkedIn (tentang project ini): [LINK_POSTINGAN]
+Postinganku di LinkedIn (tentang project ini): 
+ (https://www.linkedin.com/posts/irma-suryani-3b07841ba_final-report-api-test-reqresin-activity-7358750112396791808-MxtD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADMEGTQBFSv0AdY1vOZRPgVyJI6HXfLr5pM)
 
 
 
