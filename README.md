@@ -1,21 +1,22 @@
-📊 Dokumentasi Proyek API Testing
+#  📊 Dokumentasi Proyek API Testing
+
 Hai! Selamat datang di repository dokumentasi proyek API Testing aku 🚀 Di sini aku mendokumentasikan seluruh proses pengujian API di Reqres.in, mulai dari Test Plan sampai ke Final Report. Semua tahapan aku pisahkan per folder supaya lebih gampang diikuti.
 
-Struktur Folder:
+# Struktur Folder:
 
-.github/workflows → Berisi konfigurasi CI/CD pipeline menggunakan GitHub Actions. Pipeline ini otomatis menjalankan automation test setiap ada push/PR. Karena repository ini hanya fokus pada project pengujian (tanpa aplikasi web/apk yang perlu di-build & deploy), tahap CD (Continuous Deployment) tidak bisa dijalankan penuh. Tapi, script CD tetap disertakan untuk menunjukkan alur lengkap CI/CD.
+1. .github/workflows → Berisi konfigurasi CI/CD pipeline menggunakan GitHub Actions. Pipeline ini otomatis menjalankan automation test setiap ada push/PR. Karena repository ini hanya fokus pada project pengujian (tanpa aplikasi web/apk yang perlu di-build & deploy), tahap CD (Continuous Deployment) tidak bisa dijalankan penuh. Tapi, script CD tetap disertakan untuk menunjukkan alur lengkap CI/CD.
 
-1_Test_Plan → Berisi dokumen Test Plan yang menjelaskan ruang lingkup, tujuan, strategi, dan jadwal project ini.
+2. Test_Plan → Berisi dokumen Test Plan yang menjelaskan ruang lingkup, tujuan, strategi, dan jadwal project ini.
 
-2_Test_Case → Berisi desain Test Case yang aku buat sebagai acuan pengujian.
+3. Test_Case → Berisi desain Test Case yang aku buat sebagai acuan pengujian.
 
-3_Manual_Test_Result → Hasil pengujian manual menggunakan Postman, lengkap dengan screenshot dan bukti testing.
+4. Manual_Test_Result → Hasil pengujian manual menggunakan Postman, lengkap dengan screenshot dan bukti testing.
 
-4_Automation_Test → Kumpulan file untuk Automation API Testing menggunakan Node.js + Mocha + node-fetch. Termasuk report dari Mochawesome.
+5. Automation_Test → Kumpulan file untuk Automation API Testing menggunakan Node.js + Mocha + node-fetch. Termasuk report dari Mochawesome.
 
-5_Performance_Test → Bagian performance testing yang dilakukan dengan JMeter + Allure Report (Load Test & Stress Test).
+6. Performance_Test → Bagian performance testing yang dilakukan dengan JMeter + Allure Report (Load Test & Stress Test).
 
-6_Final_Report → Laporan akhir yang merangkum keseluruhan hasil testing, temuan penting, dan saran untuk improvement.
+7. Final_Report → Laporan akhir yang merangkum keseluruhan hasil testing, temuan penting, dan saran untuk improvement.
 
 Deskripsi Proyek:
 Proyek ini berfokus pada pengujian API di dummy API Reqres.in. Aku memulai dengan pengujian manual di Postman, dilanjutkan dengan automation menggunakan Node.js, dan pengujian performa menggunakan JMeter. Laporan hasil testing juga aku buat dalam bentuk HTML Extra Report dari Newman agar lebih visual & mudah dibaca. Selain itu, aku juga menambahkan CI/CD pipeline dengan GitHub Actions di folder .github/workflows untuk mengotomatisasi proses testing.
